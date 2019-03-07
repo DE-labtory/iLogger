@@ -1,13 +1,13 @@
 # iLogger
 
-iLooger is logger library for it-chain project.  
+iLooger is logger library for DE-labtory project.  
 You don't need to set complicated logeer. Just Import this pckage and Write log.
 
 ## Getting Started with iLogger
 
 ### Installation
 ```
-go get -u github.com/it-chain/iLogger
+go get -u github.com/DE-labtory/iLogger
 dep ensure
 ```
 
@@ -16,7 +16,7 @@ dep ensure
 ```
 package main
 
-import "github.com/it-chain/iLogger"
+import "github.com/DE-labtory/iLogger"
 
 func main() {
     iLogger.Infof(nil, "This is Info log")
@@ -43,7 +43,7 @@ There are 6 Level for log
 ```
 package main
 
-import "github.com/it-chain/iLogger"
+import "github.com/DE-labtory/iLogger"
 
 func main() {
     iLogger.EnableFileLogger(true, "./mylog.log")
@@ -58,7 +58,7 @@ You can write log to certain file path by calling EnableFileLogger function.
 ```
 package main
 
-import "github.com/it-chain/iLogger"
+import "github.com/DE-labtory/iLogger"
 
 func main() {
     iLogger.Info(nil, "This is Info log")
